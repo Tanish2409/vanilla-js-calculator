@@ -7,11 +7,13 @@
 body{
     background: linear-gradient(to right, rgba(8, 186, 218, 0), rgba(8, 186, 218, 1), rgba(8, 186, 218, 0) );
     font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 
 .calculator{
-    min-height: 100vh;
+    min-height: 90%;
 
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -78,7 +80,24 @@ body{
 
 footer{
     position: absolute;
-    right: 50px;
-    bottom: 50px;
-    font-size: 30px;
+    bottom: 0;
+    right: 10px;
+}
+
+@media screen and (max-width: 400px), (max-height: 620px){
+    .calculator{
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: minmax(1.2fr, auto) repeat(5, 1fr);
+
+        // align-content: center;
+        // justify-content: center;
+
+        // font-size: 12px;
+        transform: scale(0.6);
+    }
+
+    footer{
+        transform: scale(0.7)
+    }
 }

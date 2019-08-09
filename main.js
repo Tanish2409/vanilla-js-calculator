@@ -65,7 +65,7 @@ class Calculator {
     }
 
     setOperation(e){
-        if(!this.operation){
+        if(!this.operation && this.currOperand){
             this.operation = e.target.textContent;
             this.prevOperand = `${this.currOperand} ${e.target.textContent}`;
             this.currOperand = '';
