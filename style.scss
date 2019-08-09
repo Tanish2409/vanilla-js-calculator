@@ -44,7 +44,7 @@ body{
     word-wrap: break-word;
     word-break: break-all;
 
-    border-radius: 7px 7px 0 0;
+    border-radius: 4px;
 
     .previous-operand{
         color: rgba(255, 255, 255, 0.8);
@@ -57,17 +57,19 @@ body{
 }
 
 .btn{
-    background: rgb(218, 233, 255);
+    background: rgba(218, 233, 255, 0.728);
     cursor: pointer;
     // border: 1px solid white;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 4px;
 }
 
 .operator{
-    background: rgb(255, 79, 9);
+    background: rgba(255, 79, 9, 0.789);
 }
 
 #btn-zero{
